@@ -11,6 +11,7 @@
           <div class="col-md-2">
             <label for="status_filter">Filter Status: </label>
             <select id="status_filter" class="form-control">
+              <option value="">-- Pilih Status --</option>
               <option value="1">Waiting</option>
               <option value="2">On Process</option>
               <option value="3">Done</option>

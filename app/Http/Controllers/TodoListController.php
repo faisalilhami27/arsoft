@@ -30,7 +30,7 @@ class TodoListController extends Controller
   public function datatable(Request $request)
   {
     $status = $request->status;
-    $todoLists = TodoList::query();
+    $todoLists = TodoList::where('user_id', Auth::id());
 
     if (!empty($status)) {
       $todoLists->where('status', $status);
